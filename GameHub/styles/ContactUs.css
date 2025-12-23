@@ -1,0 +1,177 @@
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding: 0;
+    background: url('../Assets/bkg_img.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+}
+
+.contact-container {
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #1f1f1f;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    max-width: 1000px;
+    width: 100%;
+    margin: 20px auto;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+    position: relative;
+
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-info div {
+    width: 45%;
+}
+
+.contact-info h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-info span {
+    display: inline;
+    margin-right: 20px;
+}
+
+.dark-theme {
+    background-color: #121212;
+    color: #fff;
+}
+
+.light-theme {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.light-theme h4 {
+    color: #187194;
+}
+
+.light-theme strong {
+    color: #187194;
+}
+
+.light-theme .contact-container {
+    background-color: #ffffff;
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: #4da6ff;
+    border-color: #4da6ff;
+}
+
+.btn-primary:hover {
+    background-color: #3399ff;
+    border-color: #3399ff;
+}
+
+.theme-toggle-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #4da6ff;
+}
+
+.theme-toggle-icon:hover {
+    color: #3399ff;
+}
+
+.close-icon {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.close-icon:hover {
+    color: #ff3333;
+}
+
+.gamehub-header {
+    font-size: 48px;
+    font-weight: bold;
+    color: #4da6ff;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), 0 0 10px #4da6ff;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s ease-in-out forwards;
+    margin-bottom: 20px;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+@keyframes slideIn {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+h2 {
+    text-align: center;
+}
+
+h4,
+.email,
+.phone {
+    color: #47B7DC;
+}
+
+@media (max-width: 576px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-info {
+        flex-direction: column;
+    }
+
+    .gamehub-header {
+        font-size: 36px;
+    }
+
+    .theme-toggle-icon {
+        font-size: 20px;
+    }
+
+    .contact-info p {
+        font-size: 14px;
+    }
+
+    .contact-info div {
+        width: 100%;
+    }
+}

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHub Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/Library.css">
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="#">GameHub</a>
+
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+
+
+                <form class="d-flex mx-auto" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search games" aria-label="Search">
+                    <button class="btn btn-outline-light" type="submit">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </form>
+
+
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+
+                        <a class="nav-link" href="#" id="themeToggleIcon" onclick="toggleTheme()">
+                            <i class="fas fa-lightbulb"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Store.html">Store</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="reloadStorePage()">Library</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Cart.html">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="AboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="ContactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item" id="loginNav">
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="library-container">
+
+        <div class="vertical-navbar">
+            <h5>Purchased Games</h5>
+            <a href="#" onclick="showGameInfo('game1')">
+                <img src="Assets/cyb.png" alt="Cyberpunk 2077">
+                Cyberpunk 2077
+            </a>
+            <a href="#" onclick="showGameInfo('game2')">
+                <img src="Assets/rdr.png" alt="Red Dead Redemption 2"> Red Dead Redemption 2
+            </a>
+            <a href="#" onclick="showGameInfo('game3')">
+                <img src="Assets/w3.png" alt="The Witcher 3">
+                The Witcher 3
+            </a>
+            <a href="#" onclick="showGameInfo('game4')">
+                <img src="Assets/asv.png" alt="Assassin's Creed Valhalla">
+                Assassin's Creed Valhalla
+            </a>
+            <a href="#" onclick="showGameInfo('game5')">
+                <img src="Assets/gst_icon.png" alt="Ghost of Tsushima"> Ghost of Tsushima
+            </a>
+            <a href="#" onclick="showGameInfo('game6')">
+                <img src="Assets/hades.png" alt="Hades"> Hades
+            </a>
+            <a href="#" onclick="showGameInfo('game7')">
+                <img src="Assets/de.png" alt="Doom Eternal">
+                Doom Eternal
+            </a>
+            <a href="#" onclick="showGameInfo('game8')">
+                <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/367520/header.jpg" alt="Hollow Knight">
+                Hollow Knight
+            </a>
+            <a href="#" onclick="showGameInfo('game9')">
+                <img src="Assets/er.png" alt="Elden Ring">
+                Elden Ring
+            </a>
+        </div>
+
+
+        <div class="content-container">
+            <div id="game-info" class="game-info">
+                <h2>Select a game to view details</h2>
+                <p>Click on any game from the list to see its information here.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <p>© 2024 GameHub. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </footer>
+
+
+    <script src="script/Library.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

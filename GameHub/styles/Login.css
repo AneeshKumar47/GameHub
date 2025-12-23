@@ -1,0 +1,141 @@
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin: 0;
+    padding: 0;
+    background: url('../Assets/bkg_img.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.login-container {
+    position: relative;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(31, 31, 31, 0.85);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    max-width: 400px;
+    width: 100%;
+    margin: 20px auto;
+    transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.dark-theme {
+    background-color: rgba(18, 18, 18, 0.85);
+    color: #fff;
+}
+
+.light-theme {
+    background-color: rgba(248, 249, 250, 0.85);
+    color: #212529;
+}
+
+.light-theme .login-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 2px solid #e0e0e0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.btn-primary {
+    background-color: #3578e5;
+    border-color: #3578e5;
+}
+
+.btn-primary:hover {
+    background-color: #285ab1;
+    border-color: #285ab1;
+}
+
+.text-muted {
+    color: #8c8c8c !important;
+}
+
+.create-account {
+    color: #3578e5;
+    text-decoration: none;
+}
+
+.create-account:hover {
+    text-decoration: underline;
+}
+
+.theme-toggle-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #3578e5;
+    transition: color 0.3s ease;
+}
+
+.theme-toggle-icon:hover {
+    color: #285ab1;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+.navbar-dark .navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.gamehub-header {
+    font-size: 48px;
+    font-weight: bold;
+    color: #3578e5;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8), 0 0 10px #3578e5;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: slideIn 1s ease-in-out forwards;
+}
+
+.light-theme .gamehub-header {
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes slideIn {
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+label {
+    text-align: left;
+    display: block;
+}
+
+@media (max-width: 576px) {
+    .gamehub-header {
+        font-size: 36px;
+    }
+
+    .login-container {
+        padding: 20px;
+    }
+
+    .theme-toggle-icon {
+        font-size: 20px;
+    }
+}

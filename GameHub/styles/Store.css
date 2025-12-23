@@ -1,0 +1,176 @@
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+    background-color: #1f1f1f;
+    color: #fff;
+    margin: 0;
+}
+
+.light-theme {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.light-theme .navbar {
+    background-color: #ffffff;
+}
+
+.light-theme .navbar-nav .nav-link {
+    color: #ffffff;
+}
+
+.navbar-nav .nav-link {
+    color: #ffffff;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    background-color: #ffffff;
+    color: #212529;
+}
+
+.store-container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.game-card {
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.light-theme .game-card {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+.game-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.game-card:hover {
+    transform: scale(1.05);
+}
+
+.game-title {
+    font-size: 1.25rem;
+    margin-top: 10px;
+}
+
+.game-price {
+    color: #4da6ff;
+}
+
+.game-sale-price {
+    color: #ff3333;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.game-old-price {
+    text-decoration: line-through;
+    color: #aaa;
+    margin-left: 10px;
+}
+
+.game-rating {
+    margin-top: 5px;
+    font-size: 0.9rem;
+}
+
+.download-count {
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+.sale-badge {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: #ff3333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.game-card.sale {
+    position: relative;
+}
+
+.carousel-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.section-title {
+    font-size: 1.5rem;
+    margin: 30px 0 20px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+    width: 4%;
+}
+
+.carousel-control-prev {
+    left: -5%;
+}
+
+.carousel-control-next {
+    right: -5%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.footer {
+    padding: 20px 0;
+    background-color: #121212;
+    color: #ccc;
+}
+
+.light-theme .footer {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.footer a {
+    color: #4da6ff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .game-title {
+        font-size: 1.1rem;
+    }
+
+    .game-rating {
+        font-size: 0.85rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 8%;
+    }
+}
