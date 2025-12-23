@@ -2,13 +2,13 @@
 
 GameHub is a multi-page gaming store website built using HTML, CSS, JavaScript, and Bootstrap.
 
-## Features
-- Store page with featured, categories, sale and top sellers sections
-- Cart page with item management and total calculation
-- Library page displaying owned games
-- Login and Signup pages with validation
-- About Us and Contact Us pages
-- Dark and Light theme support
+## Technical Highlights
+
+- Architected a **responsive multi-page frontend web application** using **HTML5, CSS3, JavaScript (ES6), and Bootstrap 5**
+- Implemented **theme switching (Dark/Light mode)** using CSS variables and JavaScript to enhance UI accessibility and consistency
+- Developed **cookie-based Login and Sign-Up workflows** with client-side form validation and session persistence
+- Integrated **Bootstrap carousel components** to dynamically display featured games, categories, and promotional sections
+
 
 ## Pages
 - Store
